@@ -14,7 +14,8 @@ class ComicController extends Controller
      */
     public function index()
     {
-        //
+        $comics = Comic::all();
+        return view('comics.index',compact('comics'));
     }
 
     /**
@@ -24,7 +25,7 @@ class ComicController extends Controller
      */
     public function create()
     {
-        //
+       return view('comics.create');
     }
 
     /**
@@ -35,7 +36,9 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+        $comic = Comic::create($data);
+        return redirect()->route('comics.show',$comic);
     }
 
     /**
@@ -46,7 +49,7 @@ class ComicController extends Controller
      */
     public function show(Comic $comic)
     {
-        //
+        return view('comics.show',compact('comic'));
     }
 
     /**
