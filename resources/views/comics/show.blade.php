@@ -15,6 +15,14 @@
                             <div class="card-body mb-5">{{ $comic->description }}</div>
                             <div class="text-muted mb-5">{{ $comic->series }} | {{ $comic->type }}</div>
                             <div class="text-muted mb-5">{{ $comic->price }} | {{ $comic->sale_date }}</div>
+                            <div>
+                                <a href="{{ route('comics.edit', $comic) }}" class="btn btn-warning  mb-1">Modifica</a>
+                                <form action="{{ route('comics.destroy',$comic) }}" method="POST">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button class="btn btn-danger btn-small" type="submit">Cancella</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>

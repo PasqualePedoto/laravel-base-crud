@@ -19,10 +19,10 @@
                   <p>Non ci sono comics</p>
           @endforelse
           {{-- Add new comic --}}
-          <div class="col-2 my-4 add-comics">
-            <a href="{{ route('comics.create',$comic) }}" class="text-decoration-none text-white d-flex align-items-center justify-content-center flex-column">
+          <div class="col-2 my-4 add-comics d-flex align-items-center justify-content-center flex-column">
+            <a href="{{ route('comics.create',$comic) }}" class="text-decoration-none text-white ">
                 <p>Create New Comic!!</p>
-                <i class="fa-solid fa-square-plus fa-3x text-center"></i>
+                <div class="d-flex justify-content-center"><i class="fa-solid fa-square-plus fa-3x"></i></div>
             </a>
         </div>
         </div>
