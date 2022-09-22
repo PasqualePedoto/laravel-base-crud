@@ -8,6 +8,9 @@
 
     {{-- STYLE --}}
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+
+    {{-- Font Awesome --}}
+    <script src="https://kit.fontawesome.com/ddb740f05b.js" crossorigin="anonymous"></script>
 </head>
 <body>
     {{-- HEADER --}}
