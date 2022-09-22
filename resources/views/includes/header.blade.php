@@ -28,10 +28,13 @@
               <div>
                 <nav class="h-100">
                   <ul class="m-0 h-100 d-flex align-items-center-justify-content-center">
-                    <li class="active">
-                      <a href="#">CHARACTERS</a>
+                    <li class="{{ Route::is('index') ? 'active' : '' }}">
+                      <a href="{{ route('index') }}">HOME</a>
                     </li>
                     <li>
+                      <a href="#">CHARACTERS</a>
+                    </li>
+                    <li class="{{ Route::is('comics.index') ? 'active' : '' }}">
                       <a href="{{ route('comics.index') }}">COMICS</a>
                     </li>
                     <li>
