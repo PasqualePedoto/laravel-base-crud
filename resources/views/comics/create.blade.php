@@ -58,6 +58,7 @@
                                 <input type="text" class="form-control" id="type" name="type">
                             </div>
                         </div>
+                        {{-- Button --}}
                         <div class="mb-3 row p-3 w-50">
                             <div class="d-flex align-items-center justify-content-end">
                                 <button class="btn btn-small btn-primary me-3" type="submit">Add</button>
