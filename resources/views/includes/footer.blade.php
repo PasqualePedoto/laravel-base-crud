@@ -1,4 +1,4 @@
-<footer class="position-fixed bottom-0 w-100">
+<footer>
     <div class="position-relative">
         <div class="container">
             <div class="row">
