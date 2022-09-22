@@ -17,9 +17,9 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <div class="d-flex justify-content-between py-3">
+            <div class="d-flex justify-content-between">
               {{-- LOGO DC --}}
-              <figure class="m-0">
+              <figure class="m-0 py-2">
                 <img src="{{ asset('images/dc-logo.png') }}" alt="logo-dc" class="img-fluid">
               </figure>
               {{-- NAVBAR --}}
