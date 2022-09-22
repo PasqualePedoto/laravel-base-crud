@@ -12627,6 +12627,11 @@ fieldset:disabled .btn {
   }
 }
 
+header #top-header {
+  background-color: #1c82f9;
+  font-size: 8px;
+}
+
 footer {
   background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
 }
