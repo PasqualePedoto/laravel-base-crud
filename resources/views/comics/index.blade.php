@@ -24,16 +24,16 @@
                         @forelse($comics as $comic)
                         <tr>
                             <a href="#">
-                                <td class="d-flex align-items-center">
+                                <td class="d-flex align-items-center h-100">
                                     <figure class="m-0 me-3">
                                         <img width=50 src="{{ $comic->thumb }}" class="img-fluid" alt="{{ $comic->thumb }}">
                                     </figure>
                                     {{ $comic->title }}
                                 </td>
-                                <td>{{ $comic->type }} | {{ $comic->series }}</td>
-                                <td>{{ $comic->price }} &euro;</td>
-                                <td class="d-flex align-items-center justify-content-center h-100">
-                                    <a href="{{ route('comics.edit', $comic) }}" class="btn btn-warning btn-small me-3">Modifica</a>
+                                <td class="h-100">{{ $comic->type }} | {{ $comic->series }}</td>
+                                <td class="h-100">{{ $comic->price }} &euro;</td>
+                                <td class="h-100">
+                                    <a href="{{ route('comics.edit', $comic) }}" class="btn btn-warning  mb-1">Modifica</a>
                                     <form action="{{ route('comics.destroy',$comic) }}" method="POST">
                                         @csrf
                                         @method('DELETE')
