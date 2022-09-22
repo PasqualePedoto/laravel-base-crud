@@ -13,6 +13,9 @@
     {{-- HEADER --}}
     @include('includes.header')
 
+    {{-- JUMBOTRON --}}
+    @include('includes.jumbotron')
+
     {{-- MAIN --}}
     @yield('main-content')
 

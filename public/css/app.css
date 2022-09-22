@@ -12632,6 +12632,10 @@ header #top-header {
   font-size: 8px;
 }
 
+header #bottom-header {
+  background-color: #fff;
+}
+
 header #bottom-header ul {
   list-style-type: none;
 }
@@ -12658,6 +12662,15 @@ header #bottom-header ul li.active {
 header #bottom-header ul li.active a {
   font-weight: bold;
   color: #1c82f9;
+}
+
+#jumbotron {
+  background-image: url(/images/jumbotron.jpg?1b0a3671766964a4114f90322970b124);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  width: 100%;
 }
 
 footer {
