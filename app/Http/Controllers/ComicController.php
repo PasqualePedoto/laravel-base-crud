@@ -74,7 +74,7 @@ class ComicController extends Controller
     {
         $data = $request->all();
         $comic->update($data);
-        return view('comics.index');
+        return redirect()->route('index');
     }
 
     /**

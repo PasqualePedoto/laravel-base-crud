@@ -17,6 +17,7 @@
                             <th scope="col">Title</th>
                             <th scope="col">Type | Series</th>
                             <th scope="col">Price</th>
+                            <th scope="col"></th>
                         </tr>
                         </thead>
                         <tbody>
@@ -31,6 +32,14 @@
                                 </td>
                                 <td>{{ $comic->type }} | {{ $comic->series }}</td>
                                 <td>{{ $comic->price }} &euro;</td>
+                                <td class="d-flex align-items-center justify-content-center h-100">
+                                    <a href="{{ route('comics.edit', $comic) }}" class="btn btn-warning btn-small me-3">Modifica</a>
+                                    <form action="{{ route('comics.destroy',$comic) }}" method="POST">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button class="btn btn-danger btn-small" type="submit">Cancella</button>
+                                    </form>
+                                </td>
                             </a>
                         </tr>
                         @empty
