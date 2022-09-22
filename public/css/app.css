@@ -12632,6 +12632,34 @@ header #top-header {
   font-size: 8px;
 }
 
+header #bottom-header ul {
+  list-style-type: none;
+}
+
+header #bottom-header ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 5px solid transparent;
+  margin: 0 10px;
+}
+
+header #bottom-header ul li a {
+  font-size: 12px;
+  font-weight: normal;
+  text-decoration: none;
+  color: black;
+}
+
+header #bottom-header ul li.active {
+  border-bottom: 5px solid #1c82f9;
+}
+
+header #bottom-header ul li.active a {
+  font-weight: bold;
+  color: #1c82f9;
+}
+
 footer {
   background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
 }
