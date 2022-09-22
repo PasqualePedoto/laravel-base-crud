@@ -12641,14 +12641,15 @@ header #bottom-header ul {
 }
 
 header #bottom-header ul li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-bottom: 5px solid transparent;
-  margin: 0 10px;
+  padding: 0 10px;
 }
 
 header #bottom-header ul li a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 12px;
   font-weight: normal;
   text-decoration: none;
@@ -12661,6 +12662,14 @@ header #bottom-header ul li.active {
 
 header #bottom-header ul li.active a {
   font-weight: bold;
+  color: #1c82f9;
+}
+
+header #bottom-header ul li:hover {
+  border-bottom: 5px solid #1c82f9;
+}
+
+header #bottom-header ul li:hover a {
   color: #1c82f9;
 }
 
