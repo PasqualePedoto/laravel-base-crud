@@ -19,9 +19,11 @@
           <div class="col">
             <div class="d-flex justify-content-between">
               {{-- LOGO DC --}}
-              <figure class="m-0 py-2">
-                <img src="{{ asset('images/dc-logo.png') }}" alt="logo-dc" class="img-fluid">
-              </figure>
+              <a href="{{ route('index') }}">
+                <figure class="m-0 py-2">
+                  <img src="{{ asset('images/dc-logo.png') }}" alt="logo-dc" class="img-fluid">
+                </figure>
+              </a>
               {{-- NAVBAR --}}
               <div>
                 <nav class="h-100">
