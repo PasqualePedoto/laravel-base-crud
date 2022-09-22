@@ -9,7 +9,7 @@
                 <div class="col">
                     <form action="{{ route('comics.store') }}" method="POST" class="d-flex align-items-center flex-wrap mt-5">
                         @csrf
-                        {{-- Title --}}
+                        {{-- Title  --}}
                         <div class="mb-3 row p-3 w-50">
                             <label for="title" class="col-sm-2 col-form-label">Title</label>
                             <div class="col-sm-10">
